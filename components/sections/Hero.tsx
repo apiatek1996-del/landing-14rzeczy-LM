@@ -37,12 +37,13 @@ export default function Hero() {
             Dlaczego jedni stoją w miejscu z hiszpańskim, a <span className="text-primary">inni robią szybki progres?</span>
           </h1>
           
-          <p className="font-heading font-extrabold text-xl text-[#C026D3]">
+          <p className="font-heading font-extrabold text-xl text-slate-900">
             Odbierz darmowy mini-przewodnik.
           </p>
 
           <p className="text-lg text-slate-800 leading-relaxed font-sans max-w-lg">
-            Przestań uczyć się „dużo”. Zobacz, co naprawdę robią osoby, którym hiszpański wchodzi do życia naturalnie i bez oporu. <span className="italic font-light text-[#C026D3]">(To nie jest lista 100 aplikacji ani motywacyjnych trików. To 14 konkretnych zachowań, które dają realne efekty)</span>
+            Przestań uczyć się „dużo”. Zobacz, co naprawdę robią osoby, którym hiszpański wchodzi do życia naturalnie i bez oporu.
+            <span className="block mt-3 italic font-light text-[#C026D3]">(To nie jest lista 100 aplikacji ani motywacyjnych trików. To 14 konkretnych zachowań, które dają realne efekty)</span>
           </p>
 
           <div id="signup-form" className="mt-8 bg-white border-2 border-gray-100 rounded-2xl p-6 md:p-8 shadow-2xl shadow-primary/5">
