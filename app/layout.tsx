@@ -24,6 +24,22 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   title: "14 rzeczy, które robią najlepsi | Agata - Hiszpański",
   description: "Pobierz darmową checklistę i sprawdź, jakie nawyki językowe pomogą Ci w końcu swobodnie zacząć mówić po hiszpańsku.",
+  icons: {
+    icon: "/cta-agata.jpg",
+    apple: "/cta-agata.jpg",
+  },
+  openGraph: {
+    title: "14 rzeczy, które robią najlepsi | Agata - Hiszpański",
+    description: "Pobierz darmową checklistę i sprawdź, jakie nawyki językowe pomogą Ci w końcu swobodnie zacząć mówić po hiszpańsku.",
+    images: [
+      {
+        url: "/photo_desk1.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Agata Piątek - Ekspertka od Hiszpańskiego",
+      }
+    ]
+  }
 };
 
 export default function RootLayout({
