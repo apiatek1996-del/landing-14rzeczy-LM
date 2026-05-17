@@ -42,7 +42,7 @@ export default function Hero() {
           </p>
 
           <p className="text-lg text-slate-800 leading-relaxed font-sans max-w-lg">
-            Przestań uczyć się „dużo”, ale chaotycznie. Zobacz, co naprawdę robią osoby, którym hiszpański wchodzi do życia naturalnie i bez oporu. Odbierz darmowy mini-przewodnik.
+            Przestań uczyć się „dużo”, ale chaotycznie. Zobacz, co naprawdę robią osoby, którym hiszpański wchodzi do życia naturalnie i bez oporu. <strong className="font-extrabold text-[#C026D3]">Odbierz darmowy mini-przewodnik.</strong>
           </p>
 
           <div className="mt-8 bg-white border-2 border-gray-100 rounded-2xl p-6 md:p-8 shadow-2xl shadow-primary/5">
