@@ -17,13 +17,13 @@ export default function Testimonials() {
         
         <div className="text-center mb-16 md:mb-24">
           <div className="inline-block px-4 py-1.5 bg-primary/10 rounded-full text-primary font-semibold font-sans text-sm tracking-wide uppercase mb-4">
-            Ściana dowodów (Social Proof)
+            Ściana dowodów
           </div>
           <h2 className="font-heading text-3xl md:text-5xl font-bold text-[#C026D3]">
             Co o nauce ze mną mówią inni
           </h2>
           <p className="font-sans text-lg text-slate-600 max-w-2xl mx-auto mt-4">
-            Zero zmyślonych opinii – oto prawdziwe zrzuty ekranu z prywatnych wiadomości, które regularnie dostaję od moich kursantów:
+            Od początku mojej kariery nauczycielki pracowałam już z ponad 400 osobami – oto wiadomości, które regularnie dostaję od moich kursantów:
           </p>
         </div>
 

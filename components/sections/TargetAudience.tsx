@@ -109,7 +109,7 @@ export default function TargetAudience() {
             Nie wystarczy „uczyć się więcej” lub kupować kolejny kurs.
           </h3>
           <p className="font-sans text-slate-300 text-base md:text-lg leading-relaxed max-w-3xl mx-auto">
-            Trzeba wiedzieć, JAK podejmują decyzje osoby, które najszybciej osiągają płynność. Ten przewodnik Ci to pokaże.
+            Trzeba wiedzieć, JAK uczą się osoby, które najszybciej osiągają płynność. Ten przewodnik Ci to pokaże.
           </p>
         </div>
 

@@ -26,7 +26,7 @@ export default function About() {
             </p>
             
             <p>
-              Dziś mieszkam w Hiszpanii i czuję się tu jak w domu. Pomagam osobom, które już tu są lub planują przeprowadzkę, poczuć dokładnie to samo i w końcu swobodnie rozmawiać na co dzień.
+              Dziś mieszkam w Hiszpanii i czuję się tu jak w domu. Pomagam osobom, które już tu są lub planują przeprowadzkę, poczuć dokładnie to samo i swobodnie rozmawiać na co dzień.
             </p>
 
             <div className="bg-[#C026D3]/5 p-5 rounded-2xl border-l-4 border-[#C026D3] space-y-3">

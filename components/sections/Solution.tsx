@@ -8,7 +8,7 @@ const comparisons = [
   },
   {
     bad: "Motywacyjne teksty o „wychodzeniu ze strefy komfortu” pisane przez teoretyków.",
-    good: "Praktyczne przykłady z prawdziwej, codziennej nauki języka i autentycznych sytuacji z Hiszpanii."
+    good: "Praktyczne przykłady z prawdziwej, codziennej nauki języka i autentycznych sytuacji moich uczniów."
   },
   {
     bad: "Porady w stylu „po prostu oglądaj seriale po hiszpańsku” bez konkretnego systemu.",
@@ -79,7 +79,7 @@ export default function Solution() {
             Czym różni się od innych darmowych poradników?
           </h2>
           <p className="font-sans text-lg text-slate-600 max-w-2xl mx-auto mt-4">
-            W internecie pełno jest powtarzanych w nieskończoność rad. Ja postawiłam na czystą praktykę i obserwacje.
+            W internecie pełno jest powtarzanych w nieskończoność rad. Ja zebrałam te, o których nie zawsze się mówi, a na przestrzeni lat zauważyłam, że robią najlepszą robotę.
           </p>
         </div>
 
