@@ -8,7 +8,7 @@ export default function Hero() {
 
       <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
         
-        <div className="relative order-2 lg:order-1 flex justify-center lg:justify-start">
+        <div className="relative order-1 lg:order-1 flex justify-center lg:justify-start">
           <div className="relative w-full max-w-md">
             <div className="absolute -top-6 -left-6 w-12 h-12 text-primary animate-bounce">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -32,7 +32,7 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="order-1 lg:order-2 flex flex-col space-y-6">
+        <div className="order-2 lg:order-2 flex flex-col space-y-6">
           <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-black text-[#C026D3] leading-[1.15] tracking-wide">
             Dlaczego jedni stoją w miejscu z hiszpańskim, a <span className="text-primary">inni robią szybki progres?</span>
           </h1>
