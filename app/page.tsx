@@ -21,7 +21,7 @@ export default function Home() {
         - Na telefonach przenosimy całą sekcję Features ("w tej liście między innymi") 
           nad sekcję PainPoints ("Sprawdź, czy też wpadasz w te pułapki...").
       */}
-      <div className="order-[1] lg:order-[1]"><TopBanner /></div>
+      <div className="order-[1] lg:order-[1] sticky top-0 z-[100] w-full"><TopBanner /></div>
       <div className="order-[2] lg:order-[2]"><Hero /></div>
       <div className="order-[3] lg:order-[3]"><TargetAudience /></div>
       <div className="order-[5] lg:order-[4]"><PainPoints /></div>

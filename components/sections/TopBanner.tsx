@@ -5,14 +5,23 @@ export default function TopBanner() {
     e.preventDefault();
     const element = document.getElementById('signup-form');
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth', block: 'center' });
-    } else {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+      // Obliczamy pozycję elementu z uwzględnieniem wysokości przyklejonego baneru na górze (ok. 80px offsetu),
+      // dzięki czemu baner nigdy nie zasłoni nagłówka formularza!
+      const bannerOffset = 80;
+      const bodyRect = document.body.getBoundingClientRect().top;
+      const elementRect = element.getBoundingClientRect().top;
+      const elementPosition = elementRect - bodyRect;
+      const offsetPosition = elementPosition - bannerOffset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
     }
   };
 
   return (
-    <div className="sticky top-0 z-50 bg-[#C026D3] text-white py-3 px-4 shadow-md border-b border-primary/20 select-none">
+    <div className="w-full bg-[#C026D3] text-white py-3 px-4 shadow-md border-b border-primary/20 select-none">
       <div className="max-w-6xl mx-auto flex items-center justify-center gap-3 md:gap-4 flex-wrap text-center font-heading font-black text-xs md:text-sm tracking-wider uppercase">
         <span className="flex items-center gap-2">
           <div className="w-5.5 h-3.5 flex-shrink-0 flex flex-col rounded-[2px] overflow-hidden shadow-sm border border-white/20">
