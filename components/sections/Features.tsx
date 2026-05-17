@@ -128,13 +128,24 @@ export default function Features() {
     <section className="py-20 md:py-32 px-4 bg-white relative overflow-hidden">
       <div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
         
-        {/* Lewa strona - Mockup tabletu z zamazanym Notion i flagą CSS */}
-        <div className="w-full lg:w-1/2 flex justify-center order-2 lg:order-1">
+        {/* Kolumna 1: Mockup tabletu z zamazanym Notion i flagą CSS (Pierwsza na telefonach) */}
+        <div className="w-full lg:w-1/2 flex flex-col items-center justify-center order-1 lg:order-1">
           <TabletMockup />
+          
+          {/* Przycisk Pobieram - widoczny TYLKO na telefonach bezpośrednio pod obrazkiem */}
+          <div className="pt-8 w-full flex justify-center lg:hidden">
+            <a 
+              href="#" 
+              onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
+              className="inline-block text-center bg-primary hover:bg-primary-hover text-white font-bold text-lg py-4 px-12 rounded-xl transition-all duration-300 transform hover:-translate-y-1 shadow-[0_4px_14px_0_rgba(238,123,48,0.39)] uppercase tracking-wide w-full max-w-[320px]"
+            >
+              Pobieram
+            </a>
+          </div>
         </div>
 
-        {/* Prawa strona - Lista sekretów w stylu Italiany */}
-        <div className="w-full lg:w-1/2 space-y-8 order-1 lg:order-2">
+        {/* Kolumna 2: Lista sekretów (Druga na telefonach) */}
+        <div className="w-full lg:w-1/2 space-y-8 order-2 lg:order-2">
           <h2 className="font-heading text-3xl md:text-4xl font-bold text-slate-900 mb-8">
             W tej liście między innymi:
           </h2>
@@ -166,7 +177,8 @@ export default function Features() {
             </p>
           </div>
 
-          <div className="pt-6">
+          {/* Przycisk Pobieram - widoczny TYLKO na komputerach wewnątrz kolumny tekstu */}
+          <div className="pt-6 hidden lg:block">
             <a 
               href="#" 
               onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
