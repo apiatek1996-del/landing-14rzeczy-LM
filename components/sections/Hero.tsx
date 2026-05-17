@@ -45,7 +45,7 @@ export default function Hero() {
             Przestań uczyć się „dużo”, ale chaotycznie. Zobacz, co naprawdę robią osoby, którym hiszpański wchodzi do życia naturalnie i bez oporu. <strong className="font-extrabold text-[#C026D3]">Odbierz darmowy mini-przewodnik.</strong>
           </p>
 
-          <div className="mt-8 bg-white border-2 border-gray-100 rounded-2xl p-6 md:p-8 shadow-2xl shadow-primary/5">
+          <div id="signup-form" className="mt-8 bg-white border-2 border-gray-100 rounded-2xl p-6 md:p-8 shadow-2xl shadow-primary/5">
             <div id="mlb2-41407319" className="ml-form-embedContainer ml-subscribe-form ml-subscribe-form-41407319">
               <div className="ml-form-embedWrapper embedForm">
                 

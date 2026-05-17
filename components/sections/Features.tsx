@@ -136,7 +136,7 @@ export default function Features() {
           <div className="pt-8 w-full flex justify-center lg:hidden">
             <a 
               href="#" 
-              onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
+              onClick={(e) => { e.preventDefault(); document.getElementById('signup-form')?.scrollIntoView({ behavior: 'smooth', block: 'center' }); }}
               className="inline-block text-center bg-primary hover:bg-primary-hover text-white font-bold text-lg py-4 px-12 rounded-xl transition-all duration-300 transform hover:-translate-y-1 shadow-[0_4px_14px_0_rgba(238,123,48,0.39)] uppercase tracking-wide w-full max-w-[320px]"
             >
               Pobieram
@@ -181,7 +181,7 @@ export default function Features() {
           <div className="pt-6 hidden lg:block">
             <a 
               href="#" 
-              onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
+              onClick={(e) => { e.preventDefault(); document.getElementById('signup-form')?.scrollIntoView({ behavior: 'smooth', block: 'center' }); }}
               className="inline-block bg-primary hover:bg-primary-hover text-white font-bold text-lg py-4 px-12 rounded-xl transition-all duration-300 transform hover:-translate-y-1 shadow-[0_4px_14px_0_rgba(238,123,48,0.39)] uppercase tracking-wide"
             >
               Pobieram

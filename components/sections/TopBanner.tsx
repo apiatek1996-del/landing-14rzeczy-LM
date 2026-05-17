@@ -3,7 +3,12 @@ import React from 'react';
 export default function TopBanner() {
   const scrollToForm = (e: React.MouseEvent) => {
     e.preventDefault();
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    const element = document.getElementById('signup-form');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    } else {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
   };
 
   return (
