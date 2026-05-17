@@ -23,7 +23,7 @@ export default function Testimonials() {
             Co o nauce ze mną mówią inni
           </h2>
           <p className="font-sans text-lg text-slate-600 max-w-2xl mx-auto mt-4">
-            Od początku mojej kariery nauczycielki pracowałam już z ponad 400 osobami – oto wiadomości, które regularnie dostaję od moich kursantów:
+            Od początku mojej kariery nauczycielki pracowałam już z ponad 400 osobami – oto wiadomości, które dostaję od moich kursantów:
           </p>
         </div>
 

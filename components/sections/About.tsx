@@ -22,7 +22,7 @@ export default function About() {
           
           <div className="font-sans text-base md:text-lg text-slate-700 space-y-4 leading-relaxed">
             <p className="font-bold text-slate-900 text-lg md:text-xl">
-              Skończyłam magisterkę z filologii hiszpańskiej (specjalizacja nauczycielska i tłumaczeniowa) i mam ponad 7 lat doświadczenia w nauczaniu.
+              Skończyłam magisterkę z filologii hiszpańskiej i mam ponad 9 lat doświadczenia w nauczaniu.
             </p>
             
             <p>
