@@ -46,42 +46,82 @@ export default function Hero() {
           </p>
 
           <div className="mt-8 bg-white border-2 border-gray-100 rounded-2xl p-6 md:p-8 shadow-2xl shadow-primary/5">
-            <h3 className="font-heading text-xl font-bold text-[#C026D3] mb-6 text-center">
-              Podaj imię i email, a link do Przewodnika poleci prosto do Ciebie! 👇
-            </h3>
-            
-            <form className="flex flex-col space-y-4" onSubmit={(e) => e.preventDefault()}>
-              <div>
-                <input 
-                  type="email" 
-                  placeholder="Twój najlepszy email" 
-                  className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all font-sans text-slate-800"
-                  required
-                />
-              </div>
-              <div>
-                <input 
-                  type="text" 
-                  placeholder="Twoje imię" 
-                  className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all font-sans text-slate-800"
-                  required
-                />
-              </div>
-              
-              <div className="flex items-start gap-3 mt-2">
-                <input type="checkbox" id="privacy" className="mt-1 w-4 h-4 text-primary rounded border-gray-300 focus:ring-primary" required />
-                <label htmlFor="privacy" className="text-sm text-slate-600 font-sans leading-tight">
-                  Zapisując się uważasz, że akceptujesz Politykę Prywatności.
-                </label>
-              </div>
+            <div id="mlb2-41407319" className="ml-form-embedContainer ml-subscribe-form ml-subscribe-form-41407319">
+              <div className="ml-form-embedWrapper embedForm">
+                
+                {/* Formularz główny (Zostanie ukryty przez skrypt po udanym zapisie) */}
+                <div className="ml-form-embedBody ml-form-embedBodyDefault row-form">
+                  <h3 className="font-heading text-xl font-bold text-[#C026D3] mb-6 text-center">
+                    Podaj imię i email, a link do Przewodnika poleci prosto do Ciebie! 👇
+                  </h3>
+                  
+                  <form 
+                    className="ml-block-form flex flex-col space-y-4" 
+                    action="https://assets.mailerlite.com/jsonp/973308/forms/187728463314027667/subscribe" 
+                    data-code="" 
+                    method="post" 
+                    target="_blank"
+                  >
+                    <div>
+                      <input 
+                        aria-label="email" 
+                        aria-required="true" 
+                        type="email" 
+                        className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all font-sans text-slate-800" 
+                        name="fields[email]" 
+                        placeholder="Twój najlepszy email" 
+                        autoComplete="email" 
+                        required 
+                      />
+                    </div>
+                    <div>
+                      <input 
+                        aria-label="name" 
+                        type="text" 
+                        className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all font-sans text-slate-800" 
+                        name="fields[name]" 
+                        placeholder="Twoje imię" 
+                        autoComplete="given-name" 
+                        required 
+                      />
+                    </div>
+                    
+                    <div className="flex items-start gap-3 mt-2">
+                      <input type="checkbox" id="privacy" className="mt-1 w-4 h-4 text-primary rounded border-gray-300 focus:ring-primary" required />
+                      <label htmlFor="privacy" className="text-sm text-slate-600 font-sans leading-tight">
+                        Zapisując się uważasz, że akceptujesz Politykę Prywatności.
+                      </label>
+                    </div>
 
-              <button 
-                type="submit" 
-                className="w-full bg-primary hover:bg-primary-hover text-white font-bold text-lg py-4 px-8 rounded-xl transition-all duration-300 transform hover:-translate-y-1 shadow-[0_4px_14px_0_rgba(238,123,48,0.39)] mt-4"
-              >
-                Chcę bezpłatny przewodnik!
-              </button>
-            </form>
+                    {/* Google Recaptcha wymagany przez MailerLite (Zabezpieczenie przed botami) */}
+                    <div className="ml-form-recaptcha ml-validate-required flex justify-center py-2">
+                      <div className="g-recaptcha scale-90 origin-center" data-sitekey="6Lf1KHQUAAAAAFNKEX1hdSWCS3mRMv4FlFaNslaD"></div>
+                    </div>
+
+                    <input type="hidden" name="ml-submit" value="1" />
+                    <input type="hidden" name="anticsrf" value="true" />
+
+                    <button 
+                      type="submit" 
+                      className="w-full bg-primary hover:bg-primary-hover text-white font-bold text-lg py-4 px-8 rounded-xl transition-all duration-300 transform hover:-translate-y-1 shadow-[0_4px_14px_0_rgba(238,123,48,0.39)] mt-4 cursor-pointer"
+                    >
+                      Chcę bezpłatny przewodnik!
+                    </button>
+                  </form>
+                </div>
+
+                {/* Sekcja Sukcesu (Wyświetlana przez AJAX po zapisie) */}
+                <div className="ml-form-successBody row-success" style={{ display: 'none' }}>
+                  <div className="ml-form-successContent text-center p-6 bg-[#F8F4ED] border-2 border-primary/25 rounded-2xl shadow-inner">
+                    <h4 className="font-heading font-black text-[#C026D3] text-2xl mb-3">🎉 ¡Excelente!</h4>
+                    <p className="font-sans text-slate-800 text-base leading-relaxed">
+                      Twój darmowy mini-przewodnik poleciał już prosto na podany e-mail! Sprawdź swoją skrzynkę (i zajrzyj do zakładki Oferty lub folderu Spam, jeśli nie zobaczysz go w ciągu 2 minut). ¡Disfruta! ☕️🇪🇸
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
           </div>
         </div>
 

@@ -22,6 +22,7 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://ohiszpanski.pl'),
   title: "14 rzeczy, które robią najlepsi | Agata - Hiszpański",
   description: "Pobierz darmową checklistę i sprawdź, jakie nawyki językowe pomogą Ci w końcu swobodnie zacząć mówić po hiszpańsku.",
   icons: {
@@ -63,6 +64,13 @@ export default function RootLayout({
             ml('account', '973308');
           `}
         </Script>
+
+        {/* Google Recaptcha API (Required by MailerLite form spam-protection) */}
+        <Script src="https://www.google.com/recaptcha/api.js" strategy="afterInteractive" />
+
+        {/* MailerLite Webforms Interceptor (Allows smooth AJAX submissions) */}
+        <Script src="https://groot.mailerlite.com/js/w/webforms.min.js?vb397d78ebaa8a0f631d35384c46d781b" strategy="afterInteractive" />
+
         {children}
       </body>
     </html>
