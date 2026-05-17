@@ -37,9 +37,11 @@ export default function Hero() {
             Dlaczego jedni stoją w miejscu z hiszpańskim, a <span className="text-primary">inni robią szybki progres?</span>
           </h1>
           
-          <p className="font-heading font-extrabold text-xl text-slate-900">
-            Odbierz darmowy mini-przewodnik.
-          </p>
+          <div className="self-start inline-flex items-center bg-slate-900 px-6 py-3 rounded-2xl border border-[#C026D3]/25 shadow-lg shadow-black/5">
+            <span className="font-heading font-black text-lg text-[#C026D3] tracking-wide">
+              Odbierz darmowy mini-przewodnik.
+            </span>
+          </div>
 
           <p className="text-lg text-slate-800 leading-relaxed font-sans max-w-lg">
             Przestań uczyć się „dużo”. Zobacz, co naprawdę robią osoby, którym hiszpański wchodzi do życia naturalnie i bez oporu.
