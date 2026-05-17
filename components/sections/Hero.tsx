@@ -38,11 +38,11 @@ export default function Hero() {
           </h1>
           
           <p className="font-heading italic text-xl text-[#C026D3]">
-            (To nie jest lista 100 aplikacji ani motywacyjnych trików. To 14 konkretnych zachowań, które dają realne efekty)
+            Odbierz darmowy mini-przewodnik.
           </p>
 
           <p className="text-lg text-slate-800 leading-relaxed font-sans max-w-lg">
-            Przestań uczyć się „dużo”. Zobacz, co naprawdę robią osoby, którym hiszpański wchodzi do życia naturalnie i bez oporu. <strong className="font-extrabold text-[#C026D3]">Odbierz darmowy mini-przewodnik.</strong>
+            Przestań uczyć się „dużo”. Zobacz, co naprawdę robią osoby, którym hiszpański wchodzi do życia naturalnie i bez oporu. <strong className="font-extrabold text-[#C026D3]">(To nie jest lista 100 aplikacji ani motywacyjnych trików. To 14 konkretnych zachowań, które dają realne efekty)</strong>
           </p>
 
           <div id="signup-form" className="mt-8 bg-white border-2 border-gray-100 rounded-2xl p-6 md:p-8 shadow-2xl shadow-primary/5">
